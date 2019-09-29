@@ -1,6 +1,5 @@
-package com.aaa.zhou.springcloud.service.impl;
+package com.aaa.zhou.springcloud.service;
 
-import com.aaa.zhou.springcloud.service.IUserService;
 import com.aaa.zhou.springcloud.mapper.UserMapper;
 import com.aaa.zhou.springcloud.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,17 +12,16 @@ import java.util.List;
  *
  * @Author: zhoulinhao
  * @Description:
- * @Date: 2019/9/26
- * @Time: 20:23
+ * @Date: 2019/9/29
+ * @Time: 15:57
  */
 @Service
-public class UserServiceImpl implements IUserService {
+public class UserService {
 
     @Autowired
     private UserMapper userMapper;
 
-    @Override
-    public List<User> getAllUsers() {
+    public List<User> selectAllUesrs() {
         return userMapper.selectAll();
     }
 }
