@@ -16,7 +16,7 @@ import org.springframework.cloud.netflix.ribbon.RibbonClient;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-@RibbonClient(name = "USER-PROVIDER", configuration = RibbonRuleMine.class)
+//@RibbonClient(name = "USER-PROVIDER", configuration = RibbonRuleMine.class)
 public class ApplicationRun6082 {
 
     public static void main(String[] args) {

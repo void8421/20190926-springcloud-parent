@@ -1,25 +1,27 @@
 package com.aaa.zhou.springcloud;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * Created with IntelliJ IDEA.
  *
  * @Author: zhoulinhao
  * @Description:
+ *      @EnableCircuitBreaker:开启断容器
  * @Date: 2019/9/29
- * @Time: 14:58
+ * @Time: 15:49
  */
 @SpringBootApplication
+@MapperScan("com.aaa.zhou.springcloud.mapper")
 @EnableDiscoveryClient
-@EnableFeignClients
-
-public class ApplicationRun6083 {
+@EnableCircuitBreaker
+public class ApplicationRun8084 {
 
     public static void main(String[] args) {
-        SpringApplication.run(ApplicationRun6083.class, args);
+        SpringApplication.run(ApplicationRun8084.class, args);
     }
 }

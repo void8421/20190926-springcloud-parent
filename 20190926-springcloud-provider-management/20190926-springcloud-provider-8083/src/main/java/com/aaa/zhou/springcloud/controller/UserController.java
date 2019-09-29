@@ -1,7 +1,7 @@
 package com.aaa.zhou.springcloud.controller;
 
 import com.aaa.zhou.springcloud.model.User;
-import com.aaa.zhou.springcloud.service.IUserService;
+import com.aaa.zhou.springcloud.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,11 +20,11 @@ import java.util.List;
 public class UserController {
 
     @Autowired
-    public IUserService userService;
+    public UserService userService;
 
     @RequestMapping("/userall")
     public List<User> getAllUsers() {
         System.out.println(8083);
-        return userService.getAllUsers();
+        return userService.selectAllUesrs();
     }
 }

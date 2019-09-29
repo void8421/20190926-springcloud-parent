@@ -26,8 +26,8 @@ public class ConfigRest {
         return new RestTemplate();
     }
 
-    /*@Bean
+    @Bean
     public IRule randoms() {
         return new RandomRule();
-    }*/
+    }
 }

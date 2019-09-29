@@ -11,10 +11,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>20190926-springcloud-provider-8081</module>
-        <module>20190926-springcloud-provider8082</module>
-        <module>20190926-springcloud-provider8083</module>
         <module>20190926-springcloud-provider-8082</module>
         <module>20190926-springcloud-provider-8083</module>
+        <module>20190926-springcloud-provider-hystrix-8084</module>
     </modules>
 
     <artifactId>20190926-springcloud-provider-management</artifactId>
